@@ -1,0 +1,93 @@
+<div class="main-content">
+	<div class="breadcrumbs" id="breadcrumbs">
+		<script type="text/javascript">try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}</script>
+		<ul class="breadcrumb">
+			<li> <i class="icon-home home-icon"></i>
+				<a href={:U('Index/index')}>主页</a>
+			</li>
+			<li class="active">个人中心</li>
+		</ul>
+		<!-- .面包屑导航 -->
+		<div class="nav-search" id="nav-search">
+			<form class="form-search">
+				<span class="input-icon">
+					<input type="text" placeholder="输入您要查找的内容..." class="nav-search-input" id="nav-search-input" autocomplete="off" /> <i class="icon-search nav-search-icon"></i>
+				</span>
+			</form>
+		</div>
+		<!-- #查找区 -->
+	</div>
+
+	<div class="page-content">
+		<!-- 个人资料 -->
+		<div class="page-header">
+			<h1>
+				电商实验室
+				<small>
+					<i class="icon-double-angle-right"></i>
+					您的资料
+				</small>
+			</h1>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- 页面内容开始 -->
+				<div>
+					<div id="user-profile-1" class="user-profile row">
+						
+						<div class="col-xs-12 col-sm-12">
+							<div class="space-12"></div>
+
+							<div class="profile-user-info profile-user-info-striped">
+								<div class="profile-info-row">
+									<div class="profile-info-name">用户名</div>
+
+									<div class="profile-info-value">
+										<span class="editable" id="username">{$username}</span>
+									</div>
+								</div>
+
+								<div class="profile-info-row">
+									<div class="profile-info-name">地址</div>
+
+									<div class="profile-info-value">
+										<i class="icon-map-marker light-orange bigger-110"></i>
+										<span class="editable" id="country">{$address}</span>
+									</div>
+								</div>
+
+								<div class="profile-info-row">
+									<div class="profile-info-name">年级</div>
+
+									<div class="profile-info-value">
+										<span class="editable" id="age">{$senior}</span>
+									</div>
+								</div>
+
+								<div class="profile-info-row">
+									<div class="profile-info-name">加入时间</div>
+
+									<div class="profile-info-value">
+										<span class="editable" id="signup">{$date}</span>
+									</div>
+								</div>
+								<div class="profile-info-row">
+									<div class="profile-info-name">个性签名</div>
+									<div class="profile-info-value">
+										<span class="editable" id="about">{$personal}</span>
+									</div>
+								</div>
+							</div>
+							<div class="space-20"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 页面内容结束 -->
+			</div>
+			<!-- /.列 -->
+		</div>
+		<!-- /.行 -->
+		<!-- 个人中心结束 -->
+	</div>
+	<!-- /.列 -->
+</div>

@@ -1,0 +1,193 @@
+<div class="sidebar" id="sidebar">
+	<script type="text/javascript">try{ace.settings.check('sidebar' , 'fixed')}catch(e){}</script>
+
+	<ul class="nav nav-list">
+		<li>
+			<a href={:U('Index/index')}> <i class="icon-user"></i>
+				<span class="menu-text">个人中心</span>
+			</a>
+		</li>
+		<if condition="($username eq wangjun)">
+			<li>
+				<a href={:U('Index/fixprofile')} class="dropdown-toggle"> <i class="icon-wrench"></i>
+					<span class="menu-text">管理员</span> <b class="arrow icon-angle-down"></b>
+				</a>
+
+				<ul class="submenu">
+					<li>
+						<a href={:U('Index/admin_usermanage')}>
+							<i class="icon-double-angle-right"></i>
+							用户管理
+						</a>
+					</li>
+					<li>
+						<a href={:U('Index/admin_contentmanage')}>
+							<i class="icon-double-angle-right"></i>
+							记录管理
+						</a>
+					</li>
+					<!-- <li>
+						<a href={:U('Index/admin_update')}>
+							<i class="icon-double-angle-right"></i>
+							上传任务
+						</a>
+					</li>
+					<li>
+						<a href={:U('Index/admin_updateprofile')}>
+							<i class="icon-double-angle-right"></i>
+							更新资料
+						</a>
+					</li> -->
+				</ul>
+			</li>
+		</if>
+		<li>
+			<a href={:U('Index/fixprofile')} class="dropdown-toggle">
+				<i class="icon-cog"></i>
+				<span class="menu-text">个人设置</span> <b class="arrow icon-angle-down"></b>
+			</a>
+
+			<ul class="submenu">
+				<li>
+					<a href={:U('Index/fixprofile')}>
+						<i class="icon-double-angle-right"></i>
+						修改密码
+					</a>
+				</li>
+				<li>
+					<a href={:U('Index/addprofile')}>
+						<i class="icon-double-angle-right"></i>
+						修改个人资料
+					</a>
+				</li>
+			</ul>
+		</li>
+		<!-- 
+		<li>
+			<a href={:U('Index/weektask')} class="dropdown-toggle">
+				<i class="icon-bell-alt"></i>
+				<span class="menu-text">本周任务</span>
+				<b class="arrow icon-angle-down"></b> 
+			</a>
+
+			<ul class="submenu">
+				<li>
+					<a href={:U('Index/weektask')}>
+						<i class="icon-double-angle-right"></i>
+						本周任务
+					</a>
+				</li>
+
+				<li>
+					<a href={:U('Index/teamtrends')}>
+						<i class="icon-double-angle-right"></i>
+						团队动态
+					</a>
+				</li>
+				<li>
+					<a href={:U('Index/dataupdate')}>
+						<i class="icon-double-angle-right"></i>
+						资料更新
+					</a>
+				</li>
+			</ul> 
+		</li>
+-->
+		<li>
+			<a href={:U('Index/dzswdiary')} class="dropdown-toggle">
+				<i class="icon-edit"></i>
+				<span class="menu-text">内容记录</span>
+			</a>
+
+			<!-- <ul class="submenu">
+			<li>
+				<a href={:U('Index/dzswdiary')}>
+					<i class="icon-double-angle-right"></i>
+					上传日记
+				</a>
+			</li>
+
+			<li>
+				<a href={:U('Index/dzswweek')}>
+					<i class="icon-double-angle-right"></i>
+					上传周记
+				</a>
+			</li>
+
+		</ul>
+		-->
+	</li>
+
+	<li>
+		<a href={:U('Index/downloaddiary')} class="dropdown-toggle">
+			<i class="icon-download"></i>
+			<span class="menu-text">日记管理</span>
+		</a>
+
+		<!-- <ul class="submenu">
+		<li>
+			<a href={:U('Index/downloaddiary')}>
+				<i class="icon-double-angle-right"></i>
+
+			</a>
+		</li>
+
+		<li>
+			<a href={:U('Index/downloadweek')}>
+				<i class="icon-double-angle-right"></i>
+				周记下载
+			</a>
+		</li>
+
+	</ul>
+	-->
+</li>
+
+<!-- <li>
+	<a href="#" class="dropdown-toggle">
+		<i class="icon-user"></i>
+
+		<span class="menu-text">团队资料</span>
+
+		<b class="arrow icon-angle-down"></b>
+	</a>
+
+	<ul class="submenu">
+		<li>
+			<a href={:U('Index/TeamRank')}>
+				<i class="icon-double-angle-right"></i>
+				团队排行榜
+			</a>
+		</li>
+
+		<li>
+			<a href={:U('Index/TeamIndexPic')}>
+				<i class="icon-double-angle-right"></i>
+				团队首页照片
+			</a>
+		</li>
+
+		<li>
+			<a href={:U('Index/TeamProfile')}>
+				<i class="icon-double-angle-right"></i>
+				团队首页资料
+			</a>
+		</li>
+
+	</ul>
+</li> -->
+<li>
+	<a href={:U('Index/Index/index')} class="dropdown-toggle">
+		<i class="icon-chevron-left"></i>
+		<span class="menu-text">返回首页</span>
+	</a>
+</li>
+</ul>
+<!-- /.nav-list -->
+
+<div class="sidebar-collapse" id="sidebar-collapse">
+<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+</div>
+
+<script type="text/javascript">try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}</script>
+</div>

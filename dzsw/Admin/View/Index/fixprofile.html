@@ -1,0 +1,66 @@
+<div class="main-content">
+	<div id="loading" name="__PUBLIC__/img/success.gif">数据交互中....</div>
+	<div class="breadcrumbs" id="breadcrumbs">
+		<script type="text/javascript">try{ace.settings.check("breadcrumbs","fixed")}catch(e){}</script>
+		<ul class="breadcrumb">
+			<li> <i class="icon-home home-icon"></i>
+				<a href={:U('Index/index')}>主页</a>
+			</li>
+			<li>
+				<a>个人设置</a>
+			</li>
+			<li class="active">修改密码</li>
+		</ul>
+		<div class="nav-search" id="nav-search">
+			<form class="form-search">
+				<span class="input-icon">
+					<input type="text" placeholder="输入您要查找的内容..." class="nav-search-input" id="nav-search-input" autocomplete="off"> <i class="icon-search nav-search-icon"></i>
+				</span>
+			</form>
+		</div>
+	</div>
+	<div class="page-content">
+		<div class="page-header">
+			<h1>
+				修改密码
+				<small>
+					<i class="icon-double-angle-right"></i>
+					修改密码资料
+				</small>
+			</h1>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="form-horizontal" role="form" id="porfile_form" name="{:U('Index/fix')}">
+					<ol class="reg_error modal_error"></ol>
+					<div class="form-group">
+						<label class="col-sm-3 control-label no-padding-right" for="form-input-readonly">用户名</label>
+						<div class="col-sm-9">
+							<input readonly type="text" class="col-xs-10 col-sm-5" value="您的用户名字" id="porfile_name" name="porfile_name"></div>
+					</div>
+					<div class="space-4"></div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label no-padding-right" for="form-field-1">密码</label>
+						<div class="col-sm-9">
+							<input type="text" id="form-field-1" placeholder="输入您的新密码" class="col-xs-10 col-sm-5" name="porfile_password"></div>
+					</div>
+					<div class="space-4"></div>
+					<div class="clearfix form-actions">
+						<div class="col-md-offset-3 col-md-9">
+							<button class="btn btn-info" type="button" id="revise_profile">
+								<i class="icon-ok bigger-110"></i>
+								修改
+							</button>
+							&nbsp; &nbsp; &nbsp;
+							<button class="btn" type="reset">
+								<i class="icon-undo bigger-110"></i>
+								重置
+							</button>
+						</div>
+					</div>
+					<div class="hr hr-24"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

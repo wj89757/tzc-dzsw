@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>台院电商实验室-个人中心</title>
+	<meta name="keywords" content="Bootstrap模版,Bootstrap模版下载,Bootstrap教程,Bootstrap中文" />
+	<meta name="description" content="台州学院,电子商务,电子商务实验室,实验室,理成庚" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<load href="__PUBLIC__/css/jquery-ui.css" />
+	<load href="__PUBLIC__/css/style.css" />
+	<load href="__PUBLIC__/assets/css/bootstrap.min.css" />
+	<load href="__PUBLIC__/assets/css/font-awesome.min.css" />
+	<load href="__PUBLIC__/assets/css/ace.min.css" />
+	<load href="__PUBLIC__/assets/css/ace-rtl.min.css" />
+	<load href="__PUBLIC__/assets/css/ace-skins.min.css" />
+	<load href="__PUBLIC__/assets/js/ace-extra.min.js" />
+</head>
+
+<body>
+	<include file="Public/header" />
+	
+	<div class="main-container" id="main-container">
+		<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+		</script>	
+
+		<div class="main-container-inner">
+			<a class="menu-toggler" id="menu-toggler" href="#">
+				<span class="menu-text"></span>
+			</a>
+			
+			<include file="Public/sidebar" />
+			{__CONTENT__}
+			<include file="Public/setting" />
+
+		</div>
+		<!-- /.main-container-inner -->	
+		<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse"> <i class="icon-double-angle-up icon-only bigger-110"></i>
+		</a>
+	</div>
+	<!-- /.main-container -->	
+	<!-- JAVASCRIPT JS FILES -->
+	<!-- 基本js -->
+	<load href="__PUBLIC__/assets/js/jquery.js" />
+	<load href="__PUBLIC__/assets/js/bootstrap.min.js" />
+	<load href="__PUBLIC__/assets/js/typeahead-bs2.min.js" />
+	<!-- 上传日记-->
+	<load href="__PUBLIC__/assets/js/jquery.hotkeys.min.js" />
+	<load href="__PUBLIC__/assets/js/bootstrap-wysiwyg.min.js" />
+	<load href="__PUBLIC__/assets/js/bootbox.min.js" />
+	<!-- ace scripts -->
+	<!-- 下载日记 -->
+	<load href="__PUBLIC__/assets/js/jquery.dataTables.min.js" />
+	<load href="__PUBLIC__/assets/js/jquery.dataTables.bootstrap.js" />
+	<!-- ace scripts -->
+	<load href="__PUBLIC__/assets/js/ace-elements.min.js" />
+	<load href="__PUBLIC__/assets/js/ace.min.js" />
+	<load href="__PUBLIC__/assets/js/myjs/custom_fixprofile.js" />
+	<!-- jquery验证插件 -->
+	<load href="__PUBLIC__/js/jquery-ui.js" />
+	<load href="__PUBLIC__/js/jquery.form.js" />
+	<load href="__PUBLIC__/js/jquery.cookie.js" />
+	<load href="__PUBLIC__/js/jquery.validate.js" />
+	<load href="__PUBLIC__/assets/js/myjs/custom_back.js" />
+</body>
+</html>
